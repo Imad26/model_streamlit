@@ -37,7 +37,7 @@ data = pd.DataFrame([[sep_l, sep_w, pet_l, pet_w]], columns=['Sepal Length', 'Se
 st.write(data)
 
 # Load the model
-model = pickle.load(open(r'C:\Users\Mello-PC\Desktop\MDSE\ML\10_Labs_deploiement\10_deploiement\Streamlit\app solution\modeliris6.pkl', 'rb'))
+model = pickle.load(open('modeliris6.pkl', 'rb'))
 
 # Make prediction
 type = model.predict(data)
